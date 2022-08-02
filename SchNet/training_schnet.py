@@ -17,7 +17,7 @@ test_seed = 37
 random.seed(test_seed)
 
 # read the smiles list to make sure same split with ChiRo
-origin_smiles_list = pickle.load(open('data/smiles_list.pkl','rb')) # change this to crest_ip_smiles_list.pkl or crest_ea_smiles_list.pkl for CREST conformers
+origin_smiles_list = pickle.load(open('data/smiles_list.pkl','rb')) # change this to crest_ip_smiles_list.pkl, crest_ea_smiles_list.pkl or rdkit_smiles_list.pkl for CREST or RDKit geometries
 smiles_list = pickle.load(open('data/smiles_list.pkl','rb'))  
 train_size = int(len(smiles_list) * 0.8)
 val_size = int(len(smiles_list) * 0.1)
