@@ -62,16 +62,6 @@ full_dataframe = pd.read_pickle(params['datafile'])
 test_dataframe = full_dataframe[full_dataframe.smiles.apply(lambda x: x in test_smiles)] 
 #test_dataframe = test_dataframe.groupby('smiles').sample(1, random_state = seed) # this line is for direct reorg. energy prediction using rdkit_qm9_reorg_5repeat.pkl
 
-# CREATE DIRECTORY FOR SAVING/CHECKPOINTING
-save = params['save']
-
-PATH = args[2] # should contain path to subfolder where files will be saved
-if PATH[-1] != '/':
-    PATH = PATH + '/'
-
-if not os.path.exists(PATH) and save == True:
-    os.makedirs(PATH)
-
 #CREATE MODEL
 seed = params['random_seed']
 random.seed(seed)
