@@ -1,4 +1,4 @@
-# Fast Reorganization Energy Predictions achieved by Robust Graph Neural Network against Conformers
+# Accelerating Organic Electronic Materials Design with Low-Cost Molecular Reorganization Energy Predictions
 
 This repository includes:
 * Curated QM9 dataset with their vertical IP, vertical EA, reorganization energy in `./data`
