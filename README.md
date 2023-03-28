@@ -1,4 +1,4 @@
-# Accelerating Organic Electronic Materials Design with Low-Cost Molecular Reorganization Energy Predictions
+# Reorganization Energy Predictions with Graph Neural Networks Informed by Low-Cost Conformers
 
 This repository includes:
 * Curated QM9 dataset with their vertical IP, vertical EA, reorganization energy in `./data`
